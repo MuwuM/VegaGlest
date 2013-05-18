@@ -1,4 +1,4 @@
 VegaGlest
 =========
 
-An experimental branch of megaglest(http://megaglest.org) 
+Experimental branch of megaglest( http://megaglest.org ) 
