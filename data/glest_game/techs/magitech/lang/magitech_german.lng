@@ -1,0 +1,6 @@
+ResourceTypeName_wood=Holz
+UnitTypeName_worker=Arbeiter
+LevelName_elite=Coole
+ArmorTypeName_leather=Leder
+AttackTypeName_slashing=Schwert
+CommandName_move=bewegen
