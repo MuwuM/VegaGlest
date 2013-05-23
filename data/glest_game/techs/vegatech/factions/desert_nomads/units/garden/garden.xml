@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="5" />
+		<height value="2" />
+		<max-hp value="20000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="stone"/>		
+		<sight value="12" />
+		<time value="120" />
+		<multi-selection value="false" />
+		<cellmap value="false">
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+			<unit name="well" />
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="70"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name="wood" amount="200" />
+		</resources-stored>
+		<image path="images/blacksmith.bmp"/>
+		<image-cancel path="../camel_archer/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false">
+		</selection-sounds>
+		<command-sounds enabled="false">
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/temple2_build.g3d" />
+			<sound enabled="false" />
+			<type value="be_built" />
+		</skill>
+		
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="50" />
+			<animation path="models/temple4.g3d" />
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="18" />
+				<target value="faction" include-self="false">
+				</target>
+				<max-hp value="0" regeneration="0" value-percent-multipler="false" />
+				<max-ep value="0" regeneration="15" value-percent-multipler="false" />
+				<sight value="0" value-percent-multipler="false" />
+				<attack-strenght value="0" value-percent-multipler="false" />
+				<attack-range value="0" value-percent-multipler="false" />
+				<armor value="0" value-percent-multipler="false" />
+				<move-speed value="0" value-percent-multipler="false" />
+				<production-speed value="50" value-percent-multipler="true" />
+				<particles value="false">
+				</particles>
+			</attack-boost>
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/temple2_die.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles_2.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="false" start-time="0">
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+
+	<commands>			
+	</commands>
+</unit>

@@ -1,0 +1,146 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="6" />
+		<height value="2" />
+		<max-hp value="100000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="stone"/>				
+		<sight value="15" />
+		<time value="300" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="001111"/>
+			<row value="001111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111100"/>
+
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<rotationAllowed value="false" />
+		<unit-requirements/>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="300" />
+			<resource name="wood" amount="150" />
+			<!--<resource name="food" amount="-150" />-->
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="2000"/>
+			<resource name= "wood" amount="1200"/>				
+			<resource name= "stone" amount="1500"/>				
+			<resource name= "food" amount="150"/>	
+		</resources-stored>
+		<image path="images/palace.bmp" />
+		<image-cancel path="../camel_archer/images/tech_cancel.bmp"/>
+		<meeting-point value="true" image-path="../stable/images/meeting_point.bmp"/>
+		<selection-sounds enabled="false">
+		</selection-sounds>
+		<command-sounds enabled="false">
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/palace.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/palace_build_25.g3d" minHp="0" maxHp="33333"/>
+			<animation path="models/palace_build_50.g3d" minHp="33334" maxHp="66666"/>
+			<animation path="models/palace_build_75.g3d" minHp="66667" maxHp="100000"/>
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/palace.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="20" />
+			<animation path="models/palace_build_25.g3d" />
+			<sound enabled="false" start-time="0">
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_slave" />
+			<image path="../slave/images/worker.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="slave"/>
+		</command>	
+		<command>
+			<type value="produce"/>
+			<name value="produce_slinger" />
+			<image path="../slinger/images/archer.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="slinger"/>
+		</command>		
+		<command>
+			<type value="produce"/>
+			<name value="produce_khopesh_warrior" />
+			<image path="../khopesh_warrior/images/stickfighter.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="khopesh_warrior"/>
+		</command>	
+		<command>
+			<type value="produce"/>
+			<name value="produce_spearman" />
+			<image path="../spearman/images/swordman.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="spearman"/>
+		</command>		
+		
+
+	</commands>
+</unit>

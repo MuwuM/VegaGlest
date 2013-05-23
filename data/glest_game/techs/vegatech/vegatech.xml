@@ -1,0 +1,207 @@
+<?xml version="1.0" standalone="no"?>
+
+<tech-tree>
+	<description value="magitech tech tree"/>
+	
+	<attack-types>
+		<attack-type name="blade"/>
+		<attack-type name="spear"/>
+		<attack-type name="piercing"/>
+		<attack-type name="impact"/>
+		<attack-type name="anti-infantry"/>
+		<attack-type name="anti-cavalry"/>
+		<attack-type name="anti-structure"/>
+		<attack-type name="axe"/>
+		<attack-type name="anti-armour"/>
+		<attack-type name="energy"/>
+		<attack-type name="raider"/>
+		<attack-type name="fire"/>
+	</attack-types>
+	
+	<armor-types>
+		<armor-type name="organic"/>
+		<armor-type name="clothe"/>
+		<armor-type name="leather"/>
+		<armor-type name="metal"/>
+		<armor-type name="metal_structure"/>
+		<armor-type name="stone"/>
+		<armor-type name="wood"/>
+		<armor-type name="clothe_cavalry"/>
+		<armor-type name="leather_cavalry"/>
+		<armor-type name="metal_cavalry"/>
+		<armor-type name="worker"/>
+		<armor-type name="fortified"/>
+		<armor-type name="magical"/>
+	</armor-types>
+	
+	<damage-multipliers>
+		<damage-multiplier attack="blade" armor="organic" value="1.0"/>
+		<damage-multiplier attack="spear" armor="organic" value="1.0"/>
+		<damage-multiplier attack="piercing" armor="organic" value="1.0"/>
+		<damage-multiplier attack="impact" armor="organic" value="0.75"/>
+		<damage-multiplier attack="anti-infantry" armor="organic" value="1.0"/>
+		<damage-multiplier attack="anti-cavalry" armor="organic" value="0.75"/>
+		<damage-multiplier attack="anti-structure" armor="organic" value="0.75"/>
+		<damage-multiplier attack="axe" armor="organic" value="1.0"/>
+		<damage-multiplier attack="anti-armour" armor="organic" value="1.0"/>
+		<damage-multiplier attack="energy" armor="organic" value="0.75"/>
+		<damage-multiplier attack="raider" armor="organic" value="0.9"/>
+		<damage-multiplier attack="fire" armor="organic" value="1.0"/>
+		
+		<damage-multiplier attack="blade" armor="clothe" value="1.0"/>
+		<damage-multiplier attack="spear" armor="clothe" value="1.0"/>
+		<damage-multiplier attack="piercing" armor="clothe" value="1.0"/>
+		<damage-multiplier attack="impact" armor="clothe" value="0.75"/>
+		<damage-multiplier attack="anti-infantry" armor="clothe" value="1.0"/>
+		<damage-multiplier attack="anti-cavalry" armor="clothe" value="0.75"/>
+		<damage-multiplier attack="anti-structure" armor="clothe" value="0.75"/>
+		<damage-multiplier attack="axe" armor="clothe" value="1.0"/>
+		<damage-multiplier attack="anti-armour" armor="clothe" value="1.0"/>
+		<damage-multiplier attack="energy" armor="clothe" value="0.5"/>
+		<damage-multiplier attack="raider" armor="clothe" value="0.9"/>
+		<damage-multiplier attack="fire" armor="clothe" value="1.0"/>
+		
+		<damage-multiplier attack="blade" armor="leather" value="0.8"/>
+		<damage-multiplier attack="spear" armor="leather" value="0.95"/>
+		<damage-multiplier attack="piercing" armor="leather" value="0.9"/>
+		<damage-multiplier attack="impact" armor="leather" value="0.75"/>
+		<damage-multiplier attack="anti-infantry" armor="leather" value="0.95"/>
+		<damage-multiplier attack="anti-cavalry" armor="leather" value="0.65"/>
+		<damage-multiplier attack="anti-structure" armor="leather" value="0.65"/>
+		<damage-multiplier attack="axe" armor="leather" value="0.95"/>
+		<damage-multiplier attack="anti-armour" armor="leather" value="1.0"/>
+		<damage-multiplier attack="energy" armor="leather" value="0.7"/>
+		<damage-multiplier attack="raider" armor="leather" value="0.4"/>
+		<damage-multiplier attack="fire" armor="leather" value="0.4"/>
+		
+		<damage-multiplier attack="blade" armor="metal" value="0.4"/>
+		<damage-multiplier attack="spear" armor="metal" value="0.8"/>
+		<damage-multiplier attack="piercing" armor="metal" value="0.3"/>
+		<damage-multiplier attack="impact" armor="metal" value="0.9"/>
+		<damage-multiplier attack="anti-infantry" armor="metal" value="0.90"/>
+		<damage-multiplier attack="anti-cavalry" armor="metal" value="0.5"/>
+		<damage-multiplier attack="anti-structure" armor="metal" value="0.4"/>
+		<damage-multiplier attack="axe" armor="metal" value="0.8"/>
+		<damage-multiplier attack="anti-armour" armor="metal" value="1.0"/>
+		<damage-multiplier attack="energy" armor="metal" value="1.0"/>
+		<damage-multiplier attack="raider" armor="metal" value="0.3"/>
+		<damage-multiplier attack="fire" armor="metal" value="1.0"/>
+		
+		<damage-multiplier attack="blade" armor="metal_structure" value="0.3"/>
+		<damage-multiplier attack="spear" armor="metal_structure" value="0.2"/>
+		<damage-multiplier attack="piercing" armor="metal_structure" value="0.2"/>
+		<damage-multiplier attack="impact" armor="metal_structure" value="0.9"/>
+		<damage-multiplier attack="anti-infantry" armor="metal_structure" value="0.25"/>
+		<damage-multiplier attack="anti-cavalry" armor="metal_structure" value="0.2"/>
+		<damage-multiplier attack="anti-structure" armor="metal_structure" value="0.95"/>
+		<damage-multiplier attack="axe" armor="metal_structure" value="0.25"/>
+		<damage-multiplier attack="anti-armour" armor="metal_structure" value="0.5"/>
+		<damage-multiplier attack="energy" armor="metal_structure" value="0.8"/>
+		<damage-multiplier attack="raider" armor="metal_structure" value="0.9"/>
+		<damage-multiplier attack="fire" armor="metal_structure" value="0.2"/>
+		
+		<damage-multiplier attack="blade" armor="stone" value="0.25"/>
+		<damage-multiplier attack="spear" armor="stone" value="0.2"/>
+		<damage-multiplier attack="piercing" armor="stone" value="0.2"/>
+		<damage-multiplier attack="impact" armor="stone" value="1.0"/>
+		<damage-multiplier attack="anti-infantry" armor="stone" value="0.2"/>
+		<damage-multiplier attack="anti-cavalry" armor="stone" value="0.2"/>
+		<damage-multiplier attack="anti-structure" armor="stone" value="0.90"/>
+		<damage-multiplier attack="axe" armor="stone" value="0.2"/>
+		<damage-multiplier attack="anti-armour" armor="stone" value="0.5"/>
+		<damage-multiplier attack="energy" armor="stone" value="0.8"/>
+		<damage-multiplier attack="raider" armor="stone" value="0.8"/>
+		<damage-multiplier attack="fire" armor="stone" value="0.2"/>
+		
+		<damage-multiplier attack="blade" armor="wood" value="0.8"/>
+		<damage-multiplier attack="spear" armor="wood" value="0.5"/>
+		<damage-multiplier attack="piercing" armor="wood" value="0.3"/>
+		<damage-multiplier attack="impact" armor="wood" value="1.0"/>
+		<damage-multiplier attack="anti-infantry" armor="wood" value="0.5"/>
+		<damage-multiplier attack="anti-cavalry" armor="wood" value="0.4"/>
+		<damage-multiplier attack="anti-structure" armor="wood" value="1.0"/>
+		<damage-multiplier attack="axe" armor="wood" value="1.0"/>
+		<damage-multiplier attack="anti-armour" armor="wood" value="0.8"/>
+		<damage-multiplier attack="energy" armor="wood" value="0.9"/>
+		<damage-multiplier attack="raider" armor="wood" value="1.0"/>
+		<damage-multiplier attack="fire" armor="wood" value="1.0"/>
+		
+		<damage-multiplier attack="blade" armor="clothe_cavalry" value="0.75"/>
+		<damage-multiplier attack="spear" armor="clothe_cavalry" value="1.0"/>
+		<damage-multiplier attack="piercing" armor="clothe_cavalry" value="1.0"/>
+		<damage-multiplier attack="impact" armor="clothe_cavalry" value="0.5"/>
+		<damage-multiplier attack="anti-infantry" armor="clothe_cavalry" value="0.6"/>
+		<damage-multiplier attack="anti-cavalry" armor="clothe_cavalry" value="1.0"/>
+		<damage-multiplier attack="anti-structure" armor="clothe_cavalry" value="0.4"/>
+		<damage-multiplier attack="axe" armor="clothe_cavalry" value="0.7"/>
+		<damage-multiplier attack="anti-armour" armor="clothe_cavalry" value="0.75"/>
+		<damage-multiplier attack="energy" armor="clothe_cavalry" value="0.5"/>
+		<damage-multiplier attack="raider" armor="clothe_cavalry" value="0.85"/>
+		<damage-multiplier attack="fire" armor="clothe_cavalry" value="1.0"/>
+		
+		<damage-multiplier attack="blade" armor="leather_cavalry" value="0.65"/>
+		<damage-multiplier attack="spear" armor="leather_cavalry" value="0.95"/>
+		<damage-multiplier attack="piercing" armor="leather_cavalry" value="0.9"/>
+		<damage-multiplier attack="impact" armor="leather_cavalry" value="0.5"/>
+		<damage-multiplier attack="anti-infantry" armor="leather_cavalry" value="0.5"/>
+		<damage-multiplier attack="anti-cavalry" armor="leather_cavalry" value="0.95"/>
+		<damage-multiplier attack="anti-structure" armor="leather_cavalry" value="0.35"/>
+		<damage-multiplier attack="axe" armor="leather_cavalry" value="0.65"/>
+		<damage-multiplier attack="anti-armour" armor="leather_cavalry" value="0.70"/>
+		<damage-multiplier attack="energy" armor="leather_cavalry" value="0.70"/>
+		<damage-multiplier attack="raider" armor="leather_cavalry" value="0.5"/>
+		<damage-multiplier attack="fire" armor="leather_cavalry" value="0.4"/>
+		
+		<damage-multiplier attack="blade" armor="metal_cavalry" value="0.35"/>
+		<damage-multiplier attack="spear" armor="metal_cavalry" value="0.8"/>
+		<damage-multiplier attack="piercing" armor="metal_cavalry" value="0.3"/>
+		<damage-multiplier attack="impact" armor="metal_cavalry" value="0.8"/>
+		<damage-multiplier attack="anti-infantry" armor="metal_cavalry" value="0.4"/>
+		<damage-multiplier attack="anti-cavalry" armor="metal_cavalry" value="0.9"/>
+		<damage-multiplier attack="anti-structure" armor="metal_cavalry" value="0.25"/>
+		<damage-multiplier attack="axe" armor="metal_cavalry" value="0.5"/>
+		<damage-multiplier attack="anti-armour" armor="metal_cavalry" value="0.65"/>
+		<damage-multiplier attack="energy" armor="metal_cavalry" value="1.0"/>
+		<damage-multiplier attack="raider" armor="metal_cavalry" value="0.4"/>
+		<damage-multiplier attack="fire" armor="metal_cavalry" value="1.0"/>
+		
+		<damage-multiplier attack="blade" armor="worker" value="1.0"/>
+		<damage-multiplier attack="spear" armor="worker" value="1.0"/>
+		<damage-multiplier attack="piercing" armor="worker" value="1.0"/>
+		<damage-multiplier attack="impact" armor="worker" value="0.75"/>
+		<damage-multiplier attack="anti-infantry" armor="worker" value="1.0"/>
+		<damage-multiplier attack="anti-cavalry" armor="worker" value="0.75"/>
+		<damage-multiplier attack="anti-structure" armor="worker" value="0.75"/>
+		<damage-multiplier attack="axe" armor="worker" value="1.0"/>
+		<damage-multiplier attack="anti-armour" armor="worker" value="1.0"/>
+		<damage-multiplier attack="energy" armor="worker" value="0.75"/>
+		<damage-multiplier attack="raider" armor="worker" value="1.0"/>
+		<damage-multiplier attack="fire" armor="worker" value="1.0"/>
+		
+		<damage-multiplier attack="blade" armor="fortified" value="0.7"/>
+		<damage-multiplier attack="spear" armor="fortified" value="0.7"/>
+		<damage-multiplier attack="piercing" armor="fortified" value="0.25"/>
+		<damage-multiplier attack="impact" armor="fortified" value="1.0"/>
+		<damage-multiplier attack="anti-infantry" armor="fortified" value="0.35"/>
+		<damage-multiplier attack="anti-cavalry" armor="fortified" value="0.35"/>
+		<damage-multiplier attack="anti-structure" armor="fortified" value="0.9"/>
+		<damage-multiplier attack="axe" armor="fortified" value="0.9"/>
+		<damage-multiplier attack="anti-armour" armor="fortified" value="0.7"/>
+		<damage-multiplier attack="energy" armor="fortified" value="1.0"/>
+		<damage-multiplier attack="raider" armor="fortified" value="0.9"/>
+		<damage-multiplier attack="fire" armor="fortified" value="0.2"/>
+		
+		<damage-multiplier attack="blade" armor="magical" value="0.8"/>
+		<damage-multiplier attack="spear" armor="magical" value="0.5"/>
+		<damage-multiplier attack="piercing" armor="magical" value="0.3"/>
+		<damage-multiplier attack="impact" armor="magical" value="1.0"/>
+		<damage-multiplier attack="anti-infantry" armor="magical" value="0.8"/>
+		<damage-multiplier attack="anti-cavalry" armor="magical" value="0.6"/>
+		<damage-multiplier attack="anti-structure" armor="magical" value="0.8"/>
+		<damage-multiplier attack="axe" armor="magical" value="0.9"/>
+		<damage-multiplier attack="anti-armour" armor="magical" value="0.8"/>
+		<damage-multiplier attack="energy" armor="magical" value="0.3"/>
+		<damage-multiplier attack="raider" armor="magical" value="0.6"/>
+		<damage-multiplier attack="fire" armor="magical" value="0.2"/>
+	</damage-multipliers>
+</tech-tree>

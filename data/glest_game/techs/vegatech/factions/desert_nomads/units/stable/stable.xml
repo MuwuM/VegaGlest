@@ -1,0 +1,152 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="5" />
+		<height value="2" />
+		<max-hp value="22000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="stone"/>
+		<sight value="6" />
+		<time value="100" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="11111"/>
+			<row value="11111"/>
+			<row value="11111"/>
+			<row value="10001"/>
+			<row value="10011"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="150" />
+			<resource name="wood" amount="0" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/barracks.bmp" />
+		<image-cancel path="../spearman/images/tech_cancel.bmp"/>
+		<meeting-point value="true" image-path="images/meeting_point.bmp"/>
+		<selection-sounds enabled="false">
+		</selection-sounds>
+		<command-sounds enabled="false">
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="100" />
+			<animation path="models/stable.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/stable_build_20.g3d" minHp="0" maxHp="7000" />
+			<animation path="models/stable_build_40.g3d" minHp="7001" maxHp="12000" />
+			<animation path="models/stable_build_60.g3d" minHp="12001" maxHp="17000" />
+			<animation path="models/stable_build_80.g3d" minHp="17001" maxHp="22000" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/stable.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="produce"/>
+			<name value="produce_black_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/stable.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce"/>
+			<name value="produce_white_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="200" />
+			<animation path="models/stable.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/stable_build_20.g3d" />
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="false" start-time="0">
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_cataphract" />
+			<image path="../spearman/images/swordman.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_black_skill"/>
+			<produced-unit name="cataphract"/>
+		</command>
+		
+		<command>
+			<type value="produce"/>
+			<name value="produce_chariot" />
+			<image path="../chariot/images/catapult.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_white_skill"/>
+			<produced-unit name="chariot"/>
+		</command>
+		
+		<command>
+			<type value="upgrade"/>
+			<name value="research_desert_cavalry" />
+			<image path="../../upgrades/desert_cavalry/images/piercing.bmp" />
+			<unit-requirements>
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="desert_cavalry"/>
+		</command>
+		
+	</commands>
+</unit>

@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>	
+		<resource name="stone" amount="500"/>	
+		<resource name="food" amount="120"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="tent" amount="2"/>
+		<unit name="farmer" amount="3"/>
+		<unit name="chinampa" amount="1"/>
+		<!--<unit name="warrior" amount="1"/>
+		<unit name="snake_statue" amount="0"/>
+		<unit name="jaguar_warrior" amount="0"/>
+		<unit name="eagle_warrior" amount="0"/>
+		<unit name="blow_pipe_man" amount="1"/>
+		<unit name="club_fighter" amount="2"/>
+		<unit name="coatl" amount="0"/>
+		<unit name="priest" amount="0"/>
+		<unit name="archer" amount="0"/>
+		<unit name="calmecac" amount="0"/>
+		<unit name="king" amount="0"/>-->
+	</starting-units>	
+	<music value="true" path="music/tiki_music.ogg"/>
+</faction>

@@ -1,0 +1,137 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="1"/>
+		<max-hp value="12000" regeneration="0"/>
+		<max-ep value="100" regeneration="10"/>
+		<armor value="0"/>	
+		<armor-type value="wood"/>			
+		<sight value="16"/>
+		<time value="140"/>	
+		<multi-selection value="false"/>
+		<cellmap value="false"/>
+		<levels/>	
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="250"/>
+			<resource name="wood" amount="25"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/defense_tower.bmp"/>
+		<image-cancel path="../camel_archer/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false">
+		</selection-sounds>
+		<command-sounds enabled="false">
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="100"/>
+			<animation path="models/well.g3d"/>
+			<sound enabled="false"/>
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="18" />
+				<target value="faction" include-self="false">
+				</target>
+				<max-hp value="10" regeneration="5" value-percent-multipler="true" />
+				<max-ep value="0" regeneration="0" value-percent-multipler="false" />
+				<sight value="0" value-percent-multipler="false" />
+				<attack-strenght value="0" value-percent-multipler="false" />
+				<attack-range value="0" value-percent-multipler="false" />
+				<armor value="10" value-percent-multipler="false" />
+				<move-speed value="0" value-percent-multipler="false" />
+				<production-speed value="0" value-percent-multipler="false" />
+				<particles value="false">
+				</particles>
+			</attack-boost>
+		</skill>
+
+		<skill>
+			<type value="be_built"/>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="models/well.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		<skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/well.g3d" />
+			<sound enabled="false" />
+		</skill>
+			
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="40"/>
+			<anim-speed value="40"/>
+			<animation path="models/well.g3d"/>
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="false" start-time="0">
+			</sound>			
+			<fade value="false"/>
+		</skill>
+		
+
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../camel_archer/images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+		<command>
+			<type value="upgrade"/>
+			<name value="research_desert_irrigation" />
+			<image path="../../upgrades/desert_irrigation/images/weapons.bmp" />
+			<unit-requirements>
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="desert_irrigation"/>
+		</command>
+		<command>
+			<type value="upgrade"/>
+			<name value="research_advanced_irrigation" />
+			<image path="../../upgrades/desert_irrigation/images/weapons.bmp" />
+			<unit-requirements>
+			</unit-requirements>
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="advanced_irrigation"/>
+		</command>
+	</commands>
+</unit>

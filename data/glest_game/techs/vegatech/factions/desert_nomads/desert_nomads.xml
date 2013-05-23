@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="500"/>
+		<resource name="stone" amount="500"/>
+		<resource name="food" amount="500"/>
+	</starting-resources>
+	<starting-units>
+	<unit name="palace" amount="1"/>
+		<unit name="slave" amount="3"/>
+		<unit name="wheat_farm" amount="1"/>
+		<unit name="slinger" amount="1"/>
+		<unit name="khopesh_warrior" amount="2"/>
+		<unit name="risen_one" amount="1"/>
+	</starting-units>
+	<music value="true" path="music/desert_soundtrack.ogg"/>
+</faction>

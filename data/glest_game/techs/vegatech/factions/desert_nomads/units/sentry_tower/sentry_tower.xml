@@ -1,0 +1,153 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="3"/>
+		<height value="6"/>
+		<max-hp value="15000" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0"/>	
+		<armor-type value="stone"/>			
+		<sight value="15"/>
+		<time value="120"/>	
+		<multi-selection value="false"/>
+		<cellmap value="false"/>
+		<levels/>	
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<rotationAllowed value="false" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="75"/>
+			<resource name="wood" amount="150"/>			
+			<resource name="stone" amount="150"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/defense_tower.bmp"/>
+		<image-cancel path="../camel_archer/images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false">
+		</selection-sounds>
+		<command-sounds enabled="false">
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="100"/>
+			<animation path="models/defense_tower.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="be_built"/>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="models/defense_tower_construction.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="90"/>
+			<animation path="models/defense_tower.g3d"/>
+			<sound enabled="false" start-time="0">
+			</sound>
+			<attack-strenght value="200"/>
+			<attack-var value="25"/>
+			<attack-range value="12"/>
+			<attack-type value="piercing"/>
+			<attack-start-time value="0.3"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="false">
+				</sound>
+			</projectile>
+			<splash value="false"/>
+		</skill>
+		<skill>
+			<type value="morph" />
+			<name value="morph_skill" />
+			<ep-cost value="0" />
+			<speed value="4000" />
+			<anim-speed value="90" />
+			<animation path="models/defense_tower.g3d" />
+			<sound enabled="false">
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="models/defense_tower_destruction.g3d"/>
+			<particles value="true">
+				<particle-file path="smoke_particles.xml"/>
+				<particle-file path="glow_particles.xml"/>
+			</particles>
+			<sound enabled="false" start-time="0">
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+
+		<command>
+			<type value="stop"/>
+			<name value="attack_off"/>
+			<image path="images/defense_tower_attack_off.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="attack_on"/>
+			<image path="images/defense_tower_attack_on.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<attack-skill value="attack_skill"/>
+                        <stop-skill value="stop_skill"/>
+		</command>
+		<command>
+			<type value="morph" />
+			<name value="morph" />
+			<image path="../risen_one/images/stickfighter.bmp" />
+			<unit-requirements>
+			</unit-requirements>
+			<upgrade-requirements>
+			</upgrade-requirements>
+			<morph-skill value="morph_skill" />
+			<morph-unit name="risen_one" />
+			<discount value="0" />
+		</command>
+
+	</commands>
+</unit>
