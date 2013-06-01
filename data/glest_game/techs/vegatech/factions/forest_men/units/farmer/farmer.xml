@@ -245,6 +245,7 @@
 				<building name="tent"/>		
 				<building name="warrior_tent"/>		
 				<building name="mystic_tent"/>		
+				<building name="spider_tent"/>		
 				<building name="beehive"/>		
 			</buildings>
 			<start-sound enabled="false"/>
@@ -324,6 +325,7 @@
 				<unit name="chinampa"/>							
 				<unit name="warrior_tent"/>					
 				<unit name="mystic_tent"/>					
+				<unit name="spider_tent"/>					
 				<unit name="beehive"/>					
 
 			</repaired-units>		
