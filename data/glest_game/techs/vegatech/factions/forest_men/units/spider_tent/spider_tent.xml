@@ -107,22 +107,31 @@
 		<!-- *** command 0 *** -->
 		<command>
 			<type value="produce"/>
-			<name value="produce_eagle_warrior" />
+			<name value="produce_spiderling" />
 			<image path="../eagle_warrior/images/ew.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="eagle_warrior"/>
+			<produced-unit name="spiderling"/>
 		</command>
 	
 		<command>
 			<type value="produce"/>
-			<name value="produce_jaguar_warrior" />
+			<name value="produce_pison_spider" />
 			<image path="../jaguar_warrior/images/jw.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="jaguar_warrior"/>
+			<produced-unit name="poison_spider"/>
+		</command>	
+		<command>
+			<type value="produce"/>
+			<name value="produce_giant_spider" />
+			<image path="../jaguar_warrior/images/jw.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="giant_spider"/>
 		</command>	
    	</commands>
 </unit>
