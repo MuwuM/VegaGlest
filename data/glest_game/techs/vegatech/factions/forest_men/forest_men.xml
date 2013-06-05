@@ -9,13 +9,13 @@
 	</starting-resources>
 	<starting-units>
 		<unit name="tent" amount="2"/>
-		<unit name="farmer" amount="3"/>
-		<unit name="chinampa" amount="1"/>
+		<unit name="farmer" amount="4"/>
+		<unit name="chinampa" amount="2"/>
 		<!--<unit name="warrior" amount="1"/>
-		<unit name="snake_statue" amount="0"/>
-		<unit name="jaguar_warrior" amount="0"/>
-		<unit name="eagle_warrior" amount="0"/>
-		<unit name="blow_pipe_man" amount="1"/>
+		<unit name="snake_statue" amount="0"/>-->
+		<unit name="jaguar_warrior" amount="2"/>
+		<unit name="eagle_warrior" amount="1"/>
+		<!--<unit name="blow_pipe_man" amount="1"/>
 		<unit name="club_fighter" amount="2"/>
 		<unit name="coatl" amount="0"/>
 		<unit name="priest" amount="0"/>

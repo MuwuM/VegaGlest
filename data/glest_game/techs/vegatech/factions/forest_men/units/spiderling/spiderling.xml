@@ -5,16 +5,16 @@
 	<parameters>
 		<size value="1"/>
 		<height value="1"/>
-		<max-hp value="1200" regeneration="1"/>
+		<max-hp value="500" regeneration="50"/>
 		<max-ep value="0"/>
-		<armor value="25"/>	
-		<armor-type value="leather"/>
+		<armor value="0"/>	
+		<armor-type value="leather_cavalry"/>
 		<sight value="10"/>
-		<time value="80"/>	
+		<time value="10"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="elite" kills="6"/>
+			<level name="elite" kills="2"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -29,8 +29,8 @@
 			<!--upgrade name="robotics"/-->
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="125"/>
-			<resource name="gold" amount="100"/>
+			<resource name="wood" amount="50"/>
+			<resource name="gold" amount="50"/>
 			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -78,7 +78,8 @@
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="50"/>
-			<animation path="models/spiderling_idle.g3d"/>
+			<animation path="models/spiderling_idle.g3d" minHp="0" maxHp="500"/>
+			<animation path="models/spider_idle.g3d" minHp="501" maxHp="1500"/>
 			<sound enabled="false"/>
 		</skill>
 		
@@ -88,7 +89,8 @@
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="140"/>
-			<animation path="models/spiderling_walk.g3d"/>
+			<animation path="models/spiderling_walk.g3d" minHp="0" maxHp="500"/>
+			<animation path="models/spider_walk.g3d" minHp="501" maxHp="1500"/>
 			<sound enabled="false"/>
 
 		</skill>
@@ -99,7 +101,8 @@
 			<ep-cost value="0"/>
 			<speed value="120"/>
 			<anim-speed value="120"/>
-			<animation path="models/spiderling_attack.g3d"/>
+			<animation path="models/spiderling_attack.g3d" minHp="0" maxHp="500"/>
+			<animation path="models/spider_attack.g3d" minHp="501" maxHp="1500"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/spearman_attack7.wav"/>
 				<sound-file path="sounds/spearman_attack8.wav"/>
@@ -111,10 +114,10 @@
 				<sound-file path="sounds/spearman_attack6.wav"/>
 				<sound-file path="sounds/spearman_attack9.wav"/>
 			</sound> 
-			<attack-strenght value="350"/>
-			<attack-var value="150"/>
+			<attack-strenght value="220"/>
+			<attack-var value="80"/>
 			<attack-range value="1"/>
-			<attack-type value="blade"/>	
+			<attack-type value="impact"/>	
 			<attack-fields>
 				<field value="land"/>
 			</attack-fields>
@@ -129,7 +132,8 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
-			<animation path="models/spiderling_die.g3d"/>
+			<animation path="models/spiderling_die.g3d" minHp="0" maxHp="500"/>
+			<animation path="models/spider_die.g3d" minHp="501" maxHp="1500"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="$COMMONDATAPATH/sounds/archer_die1.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/archer_die2.wav"/>

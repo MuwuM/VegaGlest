@@ -5,12 +5,12 @@
 	<parameters>
 		<size value="1"/>
 		<height value="1"/>
-		<max-hp value="1200" regeneration="1"/>
+		<max-hp value="1600" regeneration="6"/>
 		<max-ep value="0"/>
-		<armor value="25"/>	
+		<armor value="0"/>	
 		<armor-type value="leather"/>
 		<sight value="10"/>
-		<time value="80"/>	
+		<time value="40"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
@@ -29,8 +29,8 @@
 			<!--upgrade name="robotics"/-->
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="wood" amount="100"/>
-			<resource name="gold" amount="125"/>
+			<resource name="wood" amount="90"/>
+			<resource name="gold" amount="105"/>
 			<resource name="food" amount="1"/>
 		</resource-requirements>
 		<resources-stored/>
@@ -130,8 +130,8 @@
 				<sound-file path="$COMMONDATAPATH/sounds/archer_attack3.wav"/>
 				<sound-file path="$COMMONDATAPATH/sounds/archer_attack4.wav"/>
 			</sound>
-			<attack-strenght value="160"/>
-			<attack-var value="60"/>
+			<attack-strenght value="369"/>
+			<attack-var value="47"/>
 			<attack-range value="10"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.1"/>
